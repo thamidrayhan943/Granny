@@ -32,7 +32,7 @@ document.getElementById('check-schedule').addEventListener('click', function () 
                     <p class="appearance-location"><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> ${data.realm}</p>
                 `;
             } else {
-                document.getElementById('next-appearance').innerText = "Sorry, something went wrong.";
+                document.getElementById('next-appearance').innerText = "Server is offline please let the owner know.";
             }
         })
         .catch(error => {
