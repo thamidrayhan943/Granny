@@ -7,7 +7,7 @@ document.getElementById('check-schedule').addEventListener('click', function () 
         return;
     }
 
-    fetch(`http://127.0.0.1:5000/next_appearance?reset_time=${resetTime}&time_zone=${timeZone}`)
+    fetch(`https://tahmidr20.pythonanywhere.com/next_appearance?reset_time=${resetTime}&time_zone=${timeZone}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
